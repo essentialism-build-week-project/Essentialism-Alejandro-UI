@@ -1,0 +1,15 @@
+.main .navbar {
+  background: black;
+}
+.main .navbar .navbar-brand {
+  color: white;
+}
+.main .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4IRiMDnFaPsvKL9-KHIi9zeaVtXWF4shd-jAYWiD2Pjjrt3b');
+}
+.main .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: gray;
+}
+.active {
+  color: gray;
+}
