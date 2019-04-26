@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v10/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,16 +149,32 @@ table {
 }
 .main .navbar .navbar-brand {
   color: white;
+  font-family: 'Indie Flower', cursive;
 }
 .main .navbar .navbar-toggler .navbar-toggler-icon {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4IRiMDnFaPsvKL9-KHIi9zeaVtXWF4shd-jAYWiD2Pjjrt3b');
 }
 .main .navbar .collapse .navbar-nav .nav-item .nav-link {
   color: white;
+  font-family: 'Indie Flower', cursive;
 }
 .main .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
   color: gray;
 }
 .main .navbar .collapse .navbar-nav .active .nav-link {
   color: gray;
+}
+.action-call .signup .action-head {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Indie Flower', cursive;
+}
+.action-call .signup .phrase {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.action-call .signup .quote {
+  text-align: center;
 }
