@@ -1,0 +1,113 @@
+.about {
+    .flexCol;
+    .about-header {
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+        font-size: 4.6rem;
+        margin-top: 30px;
+    }
+
+    .phrase {
+        align-self: center;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .flash-quotes {
+        .flexCol;
+        .center;
+        background: @black-back;
+        color: @font-color;
+        height: 200px;
+        margin-top: 20px;
+
+        .carousel {
+
+            .carousel-inner {
+
+                .carousel-item {
+                    text-align: center;
+                    .quote {
+                        font-size: 2rem;
+                        text-align: center;
+                        padding: 50px;
+                        margin: 0px 80px;
+                        @media @mobile {
+                            font-size: 1.6rem;
+                            text-align: center;
+                            padding: 50px;
+                            margin: 0px 80px;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+//carousel
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .3s;
+
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1;
+    transition: opacity ease-in 2s;
+}
+//about the team
+.devs {
+    // background: yellow;
+    .flexRow;
+    flex-wrap: wrap;
+    height: 70vh;
+
+    .devs-header {
+        font-size: 2rem;
+        font-family: @indie-flower;
+    } 
+    //header about
+    .full-size {
+        width: 100%;
+        .flexCol;
+        .center;
+        .dev {
+            margin-top: -30px;
+            width: 500px;
+            height: 250px;
+            background-image: url('https://www.latimes.com/resizer/u_ip8cLoelkhZp6XIuAALIxjtgA=/960x540/filters:quality(80)/s3.amazonaws.com/arc-goldfish-tronc-thumbnails/01-08-2018/t_1515450686937_name_la_et_cm_kermit_miss_piggy_muppets_hollywood_bowl_20170907_scaled.jpg');
+            background-size: 500px;
+            background-repeat: none;
+            border-bottom: 6px solid black;
+        }
+    }
+    //individual devs
+    .ind-dev {
+        width: 100%;
+        .flexCol;
+        .dev {
+            //dev image and contact
+            width: 25%;
+            height: 200px;
+            background-image: url('https://3.bp.blogspot.com/-sdodws6DGYY/WRN7hoAxpRI/AAAAAAAACR8/zZHKiCONJFM2lXTtNwE1wNPuetVToGiIgCLcB/s1600/Kermit%2Bteacher%2B1.jpg');
+            background-size: 300px;
+
+            .contact-dev {
+
+            }
+        }
+        //about the dev
+        .about-dev {
+            width: 75%;
+        }
+    }
+    @media @mobile {
+        height: 30vh;
+    }
+    @media @tablet {
+        height: 30vh;
+    }
+}
