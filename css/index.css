@@ -211,9 +211,35 @@ table {
   border-radius: 20px;
   color: white;
 }
+.about {
+  display: flex;
+  flex-direction: column;
+}
 .about .about-header {
   text-align: center;
   font-family: 'Indie Flower', cursive;
-  font-size: 3.6rem;
+  font-size: 4.6rem;
   margin-top: 30px;
+}
+.about .flash-quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #FFFFFF;
+  height: 200px;
+  margin-top: 20px;
+}
+.about .flash-quotes .carousel .carousel-inner .carousel-item {
+  opacity: 0;
+  transition: opacity 3s ease-out;
+}
+.about .flash-quotes .carousel .carousel-inner .carousel-item .active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+.about .flash-quotes .carousel .carousel-inner .carousel-item .quote {
+  font-size: 2rem;
+  text-align: center;
 }
