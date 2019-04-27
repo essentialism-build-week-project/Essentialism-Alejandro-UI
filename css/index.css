@@ -168,7 +168,7 @@ table {
   font-size: 4.6rem;
   text-align: center;
   margin-top: 30px;
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 .header .signup .phrase {
   text-align: center;
@@ -221,6 +221,11 @@ table {
   font-size: 4.6rem;
   margin-top: 30px;
 }
+.about .phrase {
+  align-self: center;
+  font-size: 1.2rem;
+  padding: 10px;
+}
 .about .flash-quotes {
   display: flex;
   flex-direction: column;
@@ -231,15 +236,47 @@ table {
   height: 200px;
   margin-top: 20px;
 }
-.about .flash-quotes .carousel .carousel-inner .carousel-item {
-  opacity: 0;
-  transition: opacity 3s ease-out;
-}
-.about .flash-quotes .carousel .carousel-inner .carousel-item .active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
-}
 .about .flash-quotes .carousel .carousel-inner .carousel-item .quote {
   font-size: 2rem;
   text-align: center;
+  padding: 50px;
+  margin: 0px 80px;
+}
+.carousel.carousel-fade .carousel-item {
+  display: block;
+  opacity: 0;
+  transition: opacity ease-out 0.3s;
+}
+.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+  transition: opacity ease-in 2s;
+}
+.devs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+.devs .devs-header {
+  font-size: 2rem;
+  font-family: "Indie Flower", cursive;
+}
+.devs .full-size {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.devs .full-size .dev {
+  margin-top: -30px;
+  width: 500px;
+  height: 250px;
+  background-image: url('https://www.latimes.com/resizer/u_ip8cLoelkhZp6XIuAALIxjtgA=/960x540/filters:quality(80)/s3.amazonaws.com/arc-goldfish-tronc-thumbnails/01-08-2018/t_1515450686937_name_la_et_cm_kermit_miss_piggy_muppets_hollywood_bowl_20170907_scaled.jpg');
+  background-size: 500px;
+  background-repeat: none;
+  border: 2px solid black;
+}
+.devs .half-size {
+  width: 50%;
 }

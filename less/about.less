@@ -6,6 +6,12 @@
         font-size: 4.6rem;
         margin-top: 30px;
     }
+
+    .phrase {
+        align-self: center;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
     
     .flash-quotes {
         .flexCol;
@@ -20,19 +26,61 @@
             .carousel-inner {
 
                 .carousel-item {
-                    opacity: 0;
-                    transition: opacity 3s ease-out;
-                    .active {
-                        opacity: 1;
-                        transition: opacity 1s ease-in;
-                    }
+                    
                     .quote {
                         font-size: 2rem;
                         text-align: center;
+                        padding: 50px;
+                        margin: 0px 80px;
                     }
                 }
             }
         }
     }
+    
 }
 
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .3s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1 !important;
+    transition: opacity ease-in 2s;
+}
+
+.devs {
+    // background: yellow;
+    .flexRow;
+    flex-wrap: wrap;
+    height: 100vh;
+
+    .devs-header {
+        font-size: 2rem;
+        font-family: @indie-flower;
+    } 
+
+    .full-size {
+        width: 100%;
+        .flexCol;
+        .center;
+        .dev {
+            margin-top: -30px;
+            width: 500px;
+            height: 250px;
+            background-image: url('https://www.latimes.com/resizer/u_ip8cLoelkhZp6XIuAALIxjtgA=/960x540/filters:quality(80)/s3.amazonaws.com/arc-goldfish-tronc-thumbnails/01-08-2018/t_1515450686937_name_la_et_cm_kermit_miss_piggy_muppets_hollywood_bowl_20170907_scaled.jpg');
+            background-size: 500px;
+            background-repeat: none;
+            border: 2px solid black;
+        }
+    }
+
+    .half-size {
+        width: 50%;
+        .dev {
+
+        }
+    }
+}
