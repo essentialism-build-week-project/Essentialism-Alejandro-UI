@@ -299,20 +299,6 @@ table {
   background-repeat: none;
   border-bottom: 6px solid black;
 }
-.devs .ind-dev {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.devs .ind-dev .dev {
-  width: 25%;
-  height: 200px;
-  background-image: url('https://3.bp.blogspot.com/-sdodws6DGYY/WRN7hoAxpRI/AAAAAAAACR8/zZHKiCONJFM2lXTtNwE1wNPuetVToGiIgCLcB/s1600/Kermit%2Bteacher%2B1.jpg');
-  background-size: 300px;
-}
-.devs .ind-dev .about-dev {
-  width: 75%;
-}
 @media (max-width: 500px) {
   .devs {
     height: 30vh;
@@ -322,4 +308,7 @@ table {
   .devs {
     height: 30vh;
   }
+}
+.devs .dev .dev-contact .dev-pic {
+  background: url('images/Fozzie.jpg');
 }
