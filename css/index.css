@@ -299,6 +299,8 @@ table {
 }
 .devs .full-size {
   width: 100%;
+  margin-bottom: 30px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -323,13 +325,17 @@ table {
     height: 30vh;
   }
 }
-.devs .dev-contact {
+.devs .ind-devs {
   width: 100%;
-  margin-top: 50px;
-  height: 500px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
-.devs .dev-contact .dev-pic .dev-img {
-  background-image: url('../images/Fozzie.jpg');
-  background-repeat: no-repeat;
-  max-width: 25%;
+.devs .ind-devs img {
+  max-width: 50%;
+  margin: 10px;
+  max-height: 300px;
+  padding: 10px;
+  border: 4px solid black;
 }
