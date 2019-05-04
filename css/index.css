@@ -225,6 +225,10 @@ table {
   border-radius: 20px;
   color: white;
 }
+.signup-btn .btn-center .react-btn:hover {
+  color: #96ca88;
+  border: 2px solid #96ca88;
+}
 @media (max-width: 500px) {
   .signup-btn {
     height: 30vh;
@@ -291,7 +295,6 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 70vh;
 }
 .devs .devs-header {
   font-size: 2rem;
@@ -330,6 +333,8 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .devs .indevs .dev-info {
   width: 16%;
@@ -359,4 +364,13 @@ table {
   margin: 5px;
   text-decoration: none;
   color: black;
+}
+footer {
+  width: 100%;
+  background: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
