@@ -11,9 +11,10 @@ class Nav {
     }
 }
 
-let linkItems = document.querySelectorAll('.navbar-nav .nav-item').forEach(item => new Nav(item))
+let linkItems = document.querySelectorAll('.navbar-nav .nav-item').forEach(item => new Nav(item));
 
 
+let reactLink = document.querySelectorAll('.react-btn').forEach(item => item.addEventListener('click', () => window.location.href='http://essentialism-20190428172101-hostingbucket-mysandbox.s3-website-us-east-1.amazonaws.com'));
 
 
 
