@@ -325,17 +325,36 @@ table {
     height: 30vh;
   }
 }
-.devs .ind-devs {
+.devs .indevs {
   width: 100%;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
-.devs .ind-devs img {
-  max-width: 50%;
-  margin: 10px;
-  max-height: 300px;
+.devs .indevs .dev-info {
+  width: 16%;
+  margin: 25px;
+}
+.devs .indevs .dev-info:hover {
+  border: 2px solid black;
+}
+.devs .indevs .dev-info:hover .fab {
+  margin: 5px;
+}
+.devs .indevs .dev-info img {
+  width: 100%;
   padding: 10px;
-  border: 4px solid black;
+}
+.devs .indevs .dev-info h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+}
+.devs .indevs .dev-info p {
+  text-align: center;
+}
+.devs .indevs .dev-info .fab {
+  font-size: 3.6rem;
+  margin: 5px;
 }
