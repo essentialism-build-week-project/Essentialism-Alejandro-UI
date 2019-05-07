@@ -239,6 +239,11 @@ table {
     height: 30vh;
   }
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -365,12 +370,43 @@ table {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  .devs .indevs .dev-info {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .devs .indevs .dev-info {
+    width: 50%;
+  }
+}
 footer {
   width: 100%;
   background: black;
   color: white;
-  height: 50px;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  clear: both;
+  position: relative;
+  margin-top: 3000px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 0 auto;
+}
+@media (max-width: 800px) {
+  .devs .indevs .dev-info {
+    width: 48%;
+    margin: 10px 0;
+  }
 }
