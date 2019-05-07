@@ -225,6 +225,10 @@ table {
   border-radius: 20px;
   color: white;
 }
+.signup-btn .btn-center .react-btn:hover {
+  color: #96ca88;
+  border: 2px solid #96ca88;
+}
 @media (max-width: 500px) {
   .signup-btn {
     height: 30vh;
@@ -234,6 +238,11 @@ table {
   .signup-btn {
     height: 30vh;
   }
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 .about {
   display: flex;
@@ -291,7 +300,6 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 70vh;
 }
 .devs .devs-header {
   font-size: 2rem;
@@ -330,6 +338,8 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .devs .indevs .dev-info {
   width: 16%;
@@ -357,4 +367,46 @@ table {
 .devs .indevs .dev-info .fab {
   font-size: 3.6rem;
   margin: 5px;
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 500px) {
+  .devs .indevs .dev-info {
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .devs .indevs .dev-info {
+    width: 50%;
+  }
+}
+footer {
+  width: 100%;
+  background: black;
+  color: white;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  clear: both;
+  position: relative;
+  margin-top: 3000px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1 0 auto;
+}
+@media (max-width: 800px) {
+  .devs .indevs .dev-info {
+    width: 48%;
+    margin: 10px 0;
+  }
 }
